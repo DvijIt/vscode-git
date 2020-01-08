@@ -1,12 +1,19 @@
-.super-important.highlighted {
-  background: red;
+img[alt="Pollution"] {
+  border: 5px dashed red;
 }
-.highlighted, .company-data {
-  color: yellow;
+img[src$=".jpg"] {
+  margin-left: 50px;
 }
-li.user-data {
+[data-description~="even"] {
+  background: gray;
+  
+}
+ul li[data-description*="even"] {
   font-size: 24px;
 }
-span.user-data {
-  font-size: 10px;
+a[href^="https://"] {
+  color: green;
+}
+span[lang|="en"] {
+  font-size: 28px;
 }
