@@ -1,9 +1,20 @@
-div {
-  display: inline;
-}
-span {
-  display: block;
-  width: 200px;
+header {
+  background: red;
   height: 100px;
-  background: yellow;
+}
+h1 {
+  color: white;
+  font-size: 24px;
+}
+main {
+  background: blue;
+  font-size: 18px;
+  height: 300px;
+  color: white;
+}
+footer {
+  background: green;
+  font-size: 18px;
+  height: 100px;
+  color: white;
 }
