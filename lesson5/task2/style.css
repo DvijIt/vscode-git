@@ -4,7 +4,7 @@
 [data-description] {
   font-size: 24px;
 }
-a[href], a[target] {
+a[href][target] {
   color: green;
 }
 input[type="text"] {
