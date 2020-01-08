@@ -1,9 +1,8 @@
-body {
-  font-size: 24px;
+div {
+  display: inline;
 }
-p.text {
-  color: green;
-}
-ul.list-color {
-  color: orange;
+span {
+  display: block;
+  width: 200px;
+  height: 100px;
 }
