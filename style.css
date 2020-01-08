@@ -1,0 +1,9 @@
+body {
+  font-size: 24px;
+}
+p.text {
+  color: green;
+}
+ul.list-color {
+  color: orange;
+}
