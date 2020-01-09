@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  height: 40px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  margin: 0;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-list li {
+  margin-left: 16px;
+}
+.footer {
+  height: 40px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.content {
+  display: flex;
+  flex-grow: 1;
+}
+main.content section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: pink;
+}
+aside {
+  background-color: gray;
+  width: 200px;
+}
+aside h2 {
+  text-align: center;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  line-height: 40px;
+}
