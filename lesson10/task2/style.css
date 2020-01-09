@@ -19,7 +19,7 @@
   display: flex;
   list-style: none;
 }
-.nav-list li {
+.nav-list li:not(:first-child) {
   margin-left: 16px;
 }
 .footer {
