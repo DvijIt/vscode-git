@@ -19,7 +19,7 @@ header nav ul li {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin-left: 16px;
+  margin-left: 20px;
   color: white;
 }
 main {
@@ -32,7 +32,7 @@ main {
   width: 200px;
   height: 200px;
   margin: auto;
-  top: 200px;
+  top: 150px;
 }
 .head .ear {
   position: absolute;
