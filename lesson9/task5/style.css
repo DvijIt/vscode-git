@@ -19,8 +19,13 @@ header nav ul li {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin-left: 20px;
   color: white;
+}
+header nav ul li:first-child {
+  margin-left: 16px;
+}
+header nav ul li:nth-child(2), header nav ul li:nth-child(3) {
+  margin-left: 20px;
 }
 main {
   background-color: beige;
