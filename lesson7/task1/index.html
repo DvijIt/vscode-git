@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Иерархические селекторы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        a:link {
+            background: #000;
+            color: #ffffff;
+        }
+
+        a:visited {
+            background: orange;
+            color: green;
+        }
+        a:active, button:active {
+            border: 3px solid red;
+        }
+        a:hover {
+            font-size: 24px;
+        }
+        button:enabled:hover {
+            background: grey;
+            color: #ffffff;
+        }
+        input:focus {
+            background-color: orange;
+        }
+        input:checked {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Псевдоэлементы</h1>
+
+    <section>
+        <h2>Anchor - используются для ссылок</h2>
+        <a class="anchor" href="#">I am a link</a>
+    </section>
+
+    <section>
+        <h2>Пользовательские действия</h2>
+        <button class="some-button">Hover and click me</button>
+        <button disabled class="some-button">Disabled button</button>
+    </section>
+
+    <section>
+        <h2>Инпуты</h2>
+        <input type="text" class="search">
+        <input type="checkbox" class="confirm-checkbox">
+    </section>
+</body>
+
+</html>
