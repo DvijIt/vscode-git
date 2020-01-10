@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     .menu-list {
       display: none;
       color: black;
-      margin: 0;
       padding: 0;
       list-style: none;
       background-color: lightcyan;
       box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
       width: 120px;
-      z-index: 1;
+      z-index: 99;
     }
 
     .menu-list li {
@@ -42,6 +42,7 @@
 
     .dropdown {
       margin: 16px;
+      display: inline-block;
     }
 
     .dropdown:hover .menu-list {
