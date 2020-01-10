@@ -3,31 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <title>Document</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    .menu-list {
-      display: none;
-      color: black;
-      padding: 0;
-      list-style: none;
-      background-color: lightcyan;
-      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-      width: 120px;
-      z-index: 99;
+    .dropdown {
+      margin: 16px;
+      display: inline-block;
+      position: relative;
     }
 
-    .menu-list li {
-      padding: 16px;
-    }
-
-    .menu-list li:hover {
-      background-color: ghostwhite;
+    .dropdown:hover .menu-list {
+      display: inline-block;
     }
 
     .menu-button {
+      display: block;
       background-color: darkgreen;
       padding: 16px;
       opacity: .8;
@@ -40,13 +31,26 @@
       opacity: 1;
     }
 
-    .dropdown {
-      margin: 16px;
-      display: inline-block;
+    .menu-list {
+      position: absolute;
+      display: none;
+      color: black;
+      top: 50px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      background-color: lightcyan;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      min-width: 120px;
+      z-index: 1;
     }
 
-    .dropdown:hover .menu-list {
-      display: block;
+    .menu-list li {
+      padding: 16px;
+    }
+
+    .menu-list li:hover {
+      background-color: ghostwhite;
     }
   </style>
 </head>
