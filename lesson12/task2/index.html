@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Text aligning</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <title>Text aligning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
 </head>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
   html {
     font-family: Verdana, sans-serif
   }
+
   h1 {
     font-size: 74px;
     margin: 16px auto;
@@ -21,7 +25,8 @@
     text-overflow: ellipsis;
     width: 50vw;
   }
-  div {
+
+  .block1 {
     background-color: coral;
     height: 200px;
     color: white;
@@ -32,12 +37,10 @@
 </style>
 
 <body>
-    <header>
-        <h1>Some very long header. Really to long for this page</h1>
-    </header>
-    <div>
-        Center is here
-    </div>
+  <header>
+    <h1>Some very long header. Really to long for this page</h1>
+  </header>
+  <div class="block">Center is here</div>
 </body>
 
 </html>
