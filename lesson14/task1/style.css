@@ -3,6 +3,8 @@ html {
 }
 .properties-list__item:first-child {
   line-height: 33px;
+  padding-top: 9px;
+  padding-bottom: 7px;
 }
 .properties-list__item {
   font-size: 24px;
