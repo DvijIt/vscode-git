@@ -11,6 +11,9 @@
     .form-control {
       margin: 16px;
     }
+    #gender-female, #gender-secret {
+      margin-right: 4px;
+    }
 </style>
 <body>
   <form>
@@ -24,12 +27,12 @@
       <input type="checkbox" name="agree" id="accept"><label for="accept">Accept terms and conditions</label>
     </div>
     <div class="form-control choose-gender">
-      <input type="radio" name="gender" id="gender-male"><label for="gender-male">Male</label>
+      <input type="radio" name="gender" id="gender-male" checked><label for="gender-male">Male</label>
       <input type="radio" name="gender" id="gender-female"><label for="gender-female">Female</label>
       <input type="radio" name="gender" id="gender-secret"><label for="gender-secret">Secret</label>
     </div>
     <div class="form-control">
-      <textarea name="description" id="description" placeholder="White description..."></textarea>
+      <textarea name="description" id="description" placeholder="Write description..."></textarea>
     </div>
     <div class="form-control">
       <button type="submit">Submit</button>
