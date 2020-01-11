@@ -1,6 +1,9 @@
 html {
   font-size: 18px;
 }
+.properties-list__item:first-child {
+  line-height: 33px;
+}
 .properties-list__item {
   font-size: 24px;
   line-height: 32px;
