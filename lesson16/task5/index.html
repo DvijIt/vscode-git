@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  form {
+    margin: 32px;
+  }
+
+  .form-control {
+    margin: 8px;
+  }
+</style>
+
+<body>
+  <main class="page">
+    <form class="login-form">
+      <div class="form-control">
+        <input class="form-input" name="primaryLanguage" value="HTML" disabled type="text" />
+      </div>
+      <div class="form-control">
+        <input class="form-input" type="checkbox" name="agree" />
+      </div>
+      <div class="form-control">
+        <input class="form-input" type="checkbox" name="like" checked readonly />
+      </div>
+      <div class="form-control">
+        <input class="form-input" type="color" name="favouriteColor" value="#ff7f50" />
+      </div>
+      <div class="form-control">
+        <input type="date" name="birthDate" value="2021-01-02">
+      </div>
+      <div class="form-control">
+        <input type="datetime-local" name="birthTime" value="2024-10-04T13:02">
+      </div>
+      <div class="form-control">
+        <input type="email" name="email" placeholder="example@domain.com" required>
+      </div>
+      <div class="form-control">
+        <input type="file" name="avatar">
+      </div>
+      <div class="form-control">
+        <input type="month" name="startLearning" value="2020-01">
+      </div>
+      <div class="form-control">
+        <input type="number" name="favouriteNumber" value="17">
+      </div>
+      <div class="form-control">
+        <textarea name="story" cols="30" rows="5" placeholder="A long time ago..."></textarea>
+      </div>
+      <div class="form-control">
+        <input type="password" name="password" value="secret">
+      </div>
+      <div class="form-control languages">
+        <input type="radio" name="language" value="html" id="html"><label for="html">HTML</label>
+        <input type="radio" name="language" value="css" id="css" checked><label for="css">CSS</label>
+        <input type="radio" name="language" value="javascript" id="javascript"><label
+          for="javascript">JavaScript</label>
+      </div>
+      <div class="form-control">
+        <input type="range" name="learningProgress" value="30">
+      </div>
+      <div class="form-control">
+        <select name="framework">
+          <option value="react">React</option>
+          <option value="jquery" selected>jQuery</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <input type="search" name="search" placeholder="Type first letters...">
+      </div>
+      <div class="form-control">
+        <input type="time" name="lunchEnd" value="14:01">
+      </div>
+      <div class="form-control">
+        <input type="url" name="website" placeholder="https://website.com" required>
+      </div>
+      <div class="form-control">
+        <input type="week" name="birthWeek" value="2021-W51">
+      </div>
+      <div class="form-control">
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
