@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
+<style>
+  table {
+    width: 500px;
+    margin: 16px;
+    box-sizing: border-box;
+  }
+  table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: right;
+  }
+
+  th, td {
+    padding: 4px;
+    text-align: right;
+  }
+</style>
+<body>
+  
+  <table>
+    <caption>Shopping list</caption>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Milk</td>
+        <td>3</td>
+        <td>$2</td>
+        <td>$6</td>
+      </tr>
+      <tr>
+        <td>Bread</td>
+        <td>4</td>
+        <td>$1</td>
+        <td>$4</td>
+      </tr>
+      <tr>
+        <td>Mead</td>
+        <td>5</td>
+        <td>$10</td>
+        <td>$50</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Subtotal</td>
+        <td>$60</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
