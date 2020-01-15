@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+</head>
+<style>
+  .block {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: calc(50% - 100px);
+    animation: move 2s ease forwards;
+    
+  }
+
+  @keyframes move {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: calc(50vh - 50px);
+    }
+  }
+</style>
+
+<body>
+    <div class="block">Hello, animated world!</div>
+</body>
+
+</html>
