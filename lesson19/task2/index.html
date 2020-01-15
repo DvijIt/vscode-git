@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+    animation: move 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes move {
+    0% {
+      left: 0;
+      top: 0;
+      background-color: coral;
+    }
+    25% {
+      left: 300px;
+      top: 0;
+      background-color: cornflowerblue;
+    }
+    50% {
+      left: 300px;
+      top: 300px;
+      background-color: aqua;
+    }
+    75% {
+      left: 0;
+      top: 300px;
+      background-color: yellowgreen;
+    }
+    100% {
+      left: 0;
+      top: 0;
+    }
+  }
+
+</style>
+
+<body>
+  <div class="square">
+  </div>
+</body>
+
+</html>
