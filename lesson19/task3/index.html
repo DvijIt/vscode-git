@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Images</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <style>
+    @keyframes moving {
+      from {
+        left: 0;
+        opacity: 1;
+      }
+
+      to {
+        left: 70px;
+      }
+    }
+
+    @keyframes blinking {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+    .spinner {
+      position: relative;
+      display: block;
+    }
+    .spinner-text {
+      font-family: monospace;
+      font-size: 16px;
+      text-transform: uppercase;
+      animation: blinking 2s infinite linear;
+    }
+    .rect {
+      position: absolute;
+      height: 4px;
+      width: 10px;
+      border-radius: 2px;
+      background-color: #000;
+      animation: blinking 2s infinite, moving 2s infinite alternate;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="spinner">
+      <span class="spinner-text">Loading...</span>
+      <div class="rect"></div>
+    </div>
+  </div>
+</body>
+
+</html>
