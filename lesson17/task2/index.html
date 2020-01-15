@@ -20,9 +20,27 @@
     text-align: right;
   }
 
+  thead {
+    background-color: aqua;
+  }
+
+  tbody > tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  tbody > tr:hover {
+    background-color: #aaa;
+    color: #fff;
+  }
+
   th, td {
     padding: 4px;
     text-align: right;
+    line-height: 40px;
+  }
+
+  tfoot td {
+    font-weight: 700;
   }
 </style>
 <body>
@@ -34,7 +52,7 @@
         <th>Product</th>
         <th>Amount</th>
         <th>Price</th>
-        <th>Total</th>
+        <th>Subtotal</th>
       </tr>
     </thead>
 
@@ -60,7 +78,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="3">Subtotal</td>
+        <td colspan="3">Total</td>
         <td>$60</td>
       </tr>
     </tfoot>
