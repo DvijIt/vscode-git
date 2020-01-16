@@ -6,7 +6,54 @@
     <title>Animation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
 </head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .fancy-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background: linear-gradient(45deg, yellow, red);
+    border: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    animation: jump .5s 0.4s ease-in-out, spin .5s, hide 1s 2s ease forwards;
+  }
 
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes hide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(2000px);
+    }
+  }
+</style>
 <body>
     <button class="fancy-button">Fancy button</button>
 </body>
