@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Animation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
 </head>
 <style>
   body {
@@ -13,6 +14,7 @@
     align-items: center;
     height: 100vh;
   }
+
   .fancy-button {
     width: 150px;
     height: 50px;
@@ -30,32 +32,39 @@
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-40px);
     }
+
     100% {
       transform: translateY(0);
     }
   }
+
   @keyframes spin {
     from {
       transform: rotate(0);
     }
+
     to {
       transform: rotate(360deg);
     }
   }
+
   @keyframes hide {
     from {
       transform: translateX(0);
     }
+
     to {
       transform: translateX(2000px);
     }
   }
 </style>
+
 <body>
-    <button class="fancy-button">Fancy button</button>
+  <button class="fancy-button">Fancy button</button>
 </body>
 
 </html>
