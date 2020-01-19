@@ -1,0 +1,43 @@
+.header {
+  background-color: #eee;
+}
+
+.header .nav-list {
+  padding: 0;
+  margin: 0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.header .nav-list__item {
+  background-color: #ff7f50;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px;
+  margin-left: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header .nav-list__item:hover {
+  background-color: #fb0;
+  opacity: .7;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
