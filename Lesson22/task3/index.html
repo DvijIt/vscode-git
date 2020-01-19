@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    </head>
+<style>
+  main {
+    display: flex;
+  }
+  picture {
+    max-width: 100%;
+    margin: auto;
+  }
+</style>
+<body>
+
+  <main>
+    <picture>
+      <source media="(min-width: 400px)" srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/big.jpeg">
+      <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/small.jpg">
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/big.jpeg" alt="Tree on the land">
+    </picture>
+  </main>
+
+</body>
+</html>
