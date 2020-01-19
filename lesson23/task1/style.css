@@ -25,8 +25,11 @@
   cursor: pointer;
 }
 
-.header .nav-list__item:hover {
+.header .nav-list__item_selected {
   background-color: #fb0;
+}
+
+.header .nav-list__item:hover {
   opacity: .7;
 }
 
