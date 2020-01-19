@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <title>Adaptive menu</title>
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .header {
+    height: 3em;
+    padding: 0 1em;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-btn {
+    font-size: 2em;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navigation {
+    width: 20%;
+    display: none;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-list-item {
+    background-color: #808080;
+    height: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .nav-list-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5em;
+    line-height: 2em;
+  }
+
+  .nav-list-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5em;
+    line-height: 2em;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media screen and (min-width: 600px) {
+    .header-btn {
+      display: none;
+    }
+    .navigation {
+      display: block;
+    }
+  }
+</style>
+
+<body>
+  <header class="header">
+    <button class="header-btn fa fa-bars"></button>
+  </header>
+  <main class="main">
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+        <li class="nav-list-item"><a class="nav-list-link" href="#">Mediaqueries</a></li>
+        <li class="nav-list-item"><a class="nav-list-link" href="#">Flexbox</a></li>
+      </ul>
+    </nav>
+  </main>
+</body>
+
+</html>
