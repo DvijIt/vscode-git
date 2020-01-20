@@ -35,6 +35,10 @@
   display: block;
 }
 
+.menu__item.menu__item_active {
+  color: yellow;
+}
+
 .menu__item .submenu {
   list-style-type: none;
   display: none;

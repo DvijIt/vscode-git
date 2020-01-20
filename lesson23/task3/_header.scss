@@ -10,6 +10,7 @@
   text-transform: uppercase;
   list-style-type: none;
 
+
   &__item {
     height: 100%;
     padding: 0 8px;
@@ -21,9 +22,14 @@
 
     &:hover {
       background-color: #9acd32;
+
       .submenu {
         display: block;
       }
+    }
+
+    &.menu__item_active {
+      color: yellow;
     }
 
     .submenu {
@@ -43,6 +49,7 @@
         padding: 0 8px;
         color: #fff;
         cursor: pointer;
+
         &:hover {
           color: #000;
         }
