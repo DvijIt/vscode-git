@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.navigation {
+  background-color: #ff7f50;
+
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 33%;
+  }
+}
+
+.products {
+  background-color: #006400;
+
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 33%;
+  }
+}
+
+.news {
+  background-color: #0ff;
+
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 33%;
+  }
+}
+
+.square span {
+  text-transform: lowercase;
+  padding: 8px;
+  background-color: #faebd7;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.square {
+  height: 200px;
+  display: flex;
+  flex-grow: 1;
+}
