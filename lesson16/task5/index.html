@@ -11,7 +11,7 @@
     margin: 32px;
   }
 
-  .form-control {
+  div {
     margin: 8px;
   }
 </style>
@@ -55,11 +55,13 @@
       <div class="form-control">
         <input type="password" name="password" value="secret">
       </div>
-      <div class="form-control languages">
-        <input type="radio" name="language" value="html" id="html"><label for="html">HTML</label>
-        <input type="radio" name="language" value="css" id="css" checked><label for="css">CSS</label>
-        <input type="radio" name="language" value="javascript" id="javascript"><label
-          for="javascript">JavaScript</label>
+      <div class="languages">
+        <input name="language" value="html" type="radio" id="html" />
+        <label for="html">HTML</label>
+        <input name="language" value="css" type="radio" checked id="css" />
+        <label for="css">CSS</label>
+        <input name="language" value="javascript" type="radio" id="javascript" />
+        <label for="javascript">JavaScript</label>
       </div>
       <div class="form-control">
         <input type="range" name="learningProgress" value="30">
